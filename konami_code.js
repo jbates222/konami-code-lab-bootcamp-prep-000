@@ -25,16 +25,10 @@ var konamiCodePosition = 0;
 document.addEventListener('keydown', function(e) {
   var key = allowedKeys[e.keyCode];
   var requiredKey = codes[konamiCodePosition];
-
-  // compare the key with the required key
   if (key == requiredKey) {
-
-    // move to the next key in the konami code sequence
     konamiCodePosition++;
-
-    // if the last key is reached, activate cheats
     if (konamiCodePosition == konamiCode.length) {
-      activateCheats();
+      init();
       konamiCodePosition = 0;
     }
   } else {
