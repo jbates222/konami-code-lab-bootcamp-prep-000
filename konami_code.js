@@ -24,7 +24,7 @@ var index = 0;
 
 function init() {
   document.body.addEventListener('keydown', function(e) {
-  var key = allowedKeys[e.keyCode];
+  var key = e.key;
   var requiredKey = codes[index];
   if (key == requiredKey) {
     index++;
