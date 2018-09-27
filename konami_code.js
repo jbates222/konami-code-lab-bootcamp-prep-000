@@ -22,12 +22,9 @@ var allowedKeys = {
 
 var konamiCodePosition = 0;
 
-// add keydown event listener
 document.addEventListener('keydown', function(e) {
-  // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode];
-  // get the value of the required key from the konami code
-  var requiredKey = konamiCode[konamiCodePosition];
+  var requiredKey = codes[konamiCodePosition];
 
   // compare the key with the required key
   if (key == requiredKey) {
