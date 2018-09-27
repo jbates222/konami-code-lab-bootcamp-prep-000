@@ -20,12 +20,12 @@ var allowedKeys = {
   66: 'b'
 };
 
-var konamiCodePosition = 0;
+var index = 0;
 
 function init() {
   document.body.addEventListener('keydown', function(e) {
   var key = allowedKeys[e.keyCode];
-  var requiredKey = codes[konamiCodePosition];
+  var requiredKey = codes[index];
   if (key == requiredKey) {
     konamiCodePosition++;
     if (konamiCodePosition == codes.length) {
