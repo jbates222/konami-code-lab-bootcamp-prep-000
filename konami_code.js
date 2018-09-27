@@ -27,13 +27,13 @@ function init() {
   var key = allowedKeys[e.keyCode];
   var requiredKey = codes[index];
   if (key == requiredKey) {
-    konamiCodePosition++;
-    if (konamiCodePosition == codes.length) {
+    index++;
+    if (index == codes.length) {
       alert("Congrats homie");
-      konamiCodePosition = 0;
+      index = 0;
     }
   } else {
-    konamiCodePosition = 0;
+    index = 0;
   }
 });
 }
