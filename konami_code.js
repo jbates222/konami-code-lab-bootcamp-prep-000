@@ -22,7 +22,7 @@ var allowedKeys = {
 
 var konamiCodePosition = 0;
 
-document.addEventListener('keydown', function(e) {
+document.body.addEventListener('keydown', function(e) {
   var key = allowedKeys[e.keyCode];
   var requiredKey = codes[konamiCodePosition];
   if (key == requiredKey) {
