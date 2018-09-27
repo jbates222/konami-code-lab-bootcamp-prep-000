@@ -27,7 +27,7 @@ document.addEventListener('keydown', function(e) {
   var requiredKey = codes[konamiCodePosition];
   if (key == requiredKey) {
     konamiCodePosition++;
-    if (konamiCodePosition == konamiCode.length) {
+    if (konamiCodePosition == codes.length) {
       init();
       konamiCodePosition = 0;
     }
