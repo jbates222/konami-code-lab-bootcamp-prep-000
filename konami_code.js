@@ -22,20 +22,18 @@ var allowedKeys = {
 
 var konamiCodePosition = 0;
 
-document.body.addEventListener('keydown', function(e) {
+function init() {
+  document.body.addEventListener('keydown', function(e) {
   var key = allowedKeys[e.keyCode];
   var requiredKey = codes[konamiCodePosition];
   if (key == requiredKey) {
     konamiCodePosition++;
     if (konamiCodePosition == codes.length) {
-      init();
+      alert("Congrats homie");
       konamiCodePosition = 0;
     }
   } else {
     konamiCodePosition = 0;
   }
 });
-
-function init() {
-  alert("Congrats homie");
 }
