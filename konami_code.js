@@ -37,5 +37,5 @@ document.body.addEventListener('keydown', function(e) {
 });
 
 function init() {
-  alert("cheats activated");
+  alert("Congrats homie");
 }
